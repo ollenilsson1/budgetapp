@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olles budget-app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        
+        
+        <!-- Lägg till beskrivning och värde -->
+
+        <div class="add_value">
+            <div class="add_value_container">
+                <select class="add_select">
+                    <option value="income" selected>+</option>
+                    <option value="expenses">-</option>
+                </select>
+                <input type="text" class="add_description" placeholder="typ av utgift/inkomst">
+                <input type="number" class="add_value" placeholder="Värde">
+            </div>
+        
+            <!-- Lägg till eller rensa knappar -->
+
+            <div class="submit_delete_value">
+                <button id="submit">Lägg till</button>
+                <button id="delete">Rensa</button>
+            </div>
+        </div>    
+
+            <!-- container för inkomster och Utgifter -->
+
+        <div class="result_container">
+                
+
+            <div class="total">
+                <h1 class="h1_total">Totalt kvar:</h1>
+                <div class="total_result"></div>
+
+
+            </div>
+            </div>
+
+            <div class="income_expenses">
+                <!-- div för inkomster -->
+                
+                    <div class="income">
+                    <h2 class="income_h2">Inkomster:</h2>
+                    <div class="income_list">
+                    
+
+                    </div>
+                    </div>
+                
+                
+                <!-- div för utgifter -->
+
+                <div class="expenses">
+                <h2 class="expenses_h2">Utgifter:</h2>
+                <div class="expenses_list">
+                    
+
+                </div>
+            </div>
+ 
+        </div>
+        
+          
+    </div>
+    
+</body>
+</html>

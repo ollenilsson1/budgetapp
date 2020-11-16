@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    color: #404040;
+}
+
+body {
+    background-color: #333;
+}
+
+/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
+max-width är 900px sen går den över till 80% av sidan */
+
+.wrapper {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+}
+
+.add_value_container {
+    margin-top:25%;
+    padding-top: 3%;
+    display:flex;
+    justify-content: space-around;
+
+}
+
+.submit_delete_value {
+    padding-top: 3%;
+    display:flex;
+    justify-content: center;
+}
+
+
+
+
+.result_container {
+    display:flex;
+    justify-content: center;
+    padding:10px;
+    
+}
+
+.income_expenses {
+    display:flex;
+    justify-content: space-around;
+}
