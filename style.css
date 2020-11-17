@@ -14,6 +14,14 @@ body {
 /* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
 max-width är 900px sen går den över till 80% av sidan */
 
+h1 {
+    font-size:2rem;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
 .wrapper {
     width: 80%;
     max-width: 900px;
@@ -23,18 +31,59 @@ max-width är 900px sen går den över till 80% av sidan */
 
 .add_value_container {
     margin-top:25%;
-    padding-top: 3%;
+    padding-top: 5%;
     display:flex;
     justify-content: space-around;
 
 }
 
+#add_select {
+   
+    width:10%;
+}
+
+#add_text {
+    width:40%;
+    
+}
+
+#add_amount {
+    width:30%;
+}
+
+/* För att ta bort styling på "add_amount"-fältet */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
 .submit_delete_value {
-    padding-top: 3%;
+    padding-top: 5%;
+    padding-bottom: 3%;
     display:flex;
     justify-content: center;
 }
 
+#submit {
+    width:10%;
+    padding:0.4rem;
+    margin-right:2%;
+}
+
+#delete {
+    width:10%;
+    padding:0.4rem;
+    margin-left:2%;
+}
 
 
 
