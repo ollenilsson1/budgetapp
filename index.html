@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olles budget-app</title>
     <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer> </script>
 </head>
 <body>
     <div class="wrapper">
@@ -15,11 +16,11 @@
         <div class="add_value">
             <div class="add_value_container">
                 <select id="add_select">
-                    <option value="income" selected>+</option>
-                    <option value="expenses">-</option>
+                    <option value="+" value="income" selected>+</option>
+                    <option value="-" value="expenses">-</option>
                 </select>
-                <input id="add_text" type="text" class="add_description" placeholder="typ av utgift/inkomst">
-                <input id="add_amount" type="number" class="add_value" placeholder="Värde">
+                <input id="add_text" type="text" placeholder="typ av utgift/inkomst">
+                <input id="add_amount" type="number" placeholder="Värde">
             </div>
         
             <!-- Lägg till eller rensa knappar -->
@@ -48,7 +49,7 @@
                 
                     <div class="income">
                     <h2 class="income_h2">Inkomster:</h2>
-                    <div class="income_list">
+                    <div id="income_list">
                     
 
                     </div>
@@ -57,9 +58,9 @@
                 
                 <!-- div för utgifter -->
 
-                <div class="expenses">
-                <h2 class="expenses_h2">Utgifter:</h2>
-                <div class="expenses_list">
+                <div class="expense">
+                <h2 class="expense_h2">Utgifter:</h2>
+                <div id="expense_list">
                     
 
                 </div>

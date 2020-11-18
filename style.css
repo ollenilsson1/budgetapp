@@ -22,6 +22,14 @@ h2 {
     font-size: 1.3rem;
 }
 
+.expense-p {
+    color:red;
+}
+
+.income-p {
+    color:green;
+}
+
 .wrapper {
     width: 80%;
     max-width: 900px;
