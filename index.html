@@ -5,13 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olles budget-app</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet"> 
     <script src="app.js" defer> </script>
 </head>
 <body>
     <div class="wrapper">
         
-        
+
+        <!--- Div för att presentera totalen -->
+
+        <div class="result_container">
+                
+
+            <div class="total">
+                <h1 id="h1_total">Total budget</h1>
+                <div id="total_result">
+
+                </div>
+
+
+            </div>
+        </div>
+
+
         <!-- Lägg till beskrivning och värde -->
+
+    <div class="background-container">
+
 
         <div class="add_value">
             <div class="add_value_container">
@@ -19,7 +40,7 @@
                     <option value="+" value="income" selected>+</option>
                     <option value="-" value="expenses">-</option>
                 </select>
-                <input id="add_text" type="text" placeholder="typ av utgift/inkomst">
+                <input id="add_text" type="text" placeholder="Beskrivning av utgift/inkomst">
                 <input id="add_amount" type="number" placeholder="Värde">
             </div>
         
@@ -33,41 +54,32 @@
 
             <!-- container för inkomster och Utgifter -->
 
-        <div class="result_container">
-                
-
-            <div class="total">
-                <h1 class="h1_total">Totalt kvar:</h1>
-                <div class="total_result"></div>
-
-
-            </div>
-            </div>
+    
 
             <div class="income_expenses">
                 <!-- div för inkomster -->
                 
-                    <div class="income">
-                    <h2 class="income_h2">Inkomster:</h2>
+                <div class="income">
+                    <h2 class="income_h2">Inkomster</h2>
                     <div id="income_list">
                     
 
                     </div>
-                    </div>
+                </div>
                 
                 
                 <!-- div för utgifter -->
 
                 <div class="expense">
-                <h2 class="expense_h2">Utgifter:</h2>
-                <div id="expense_list">
+                    <h2 class="expense_h2">Utgifter</h2>
+                    <div id="expense_list">
                     
 
+                    </div>
                 </div>
-            </div>
  
         </div>
-        
+    </div>
           
     </div>
     

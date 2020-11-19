@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     box-sizing: border-box;
     color: #404040;
@@ -11,24 +11,37 @@ body {
     background-color: #333;
 }
 
-/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
-max-width är 900px sen går den över till 80% av sidan */
 
-h1 {
-    font-size:2rem;
-}
+
 
 h2 {
-    font-size: 1.3rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: underline;
 }
 
 .expense-p {
-    color:red;
+    color:rgb(177, 3, 3);
+    font-size: 1.1rem;
+    
 }
 
 .income-p {
-    color:green;
+    color:rgb(1, 105, 1);
+    font-size: 1.1rem;
+    font-weight: 400;
+    
 }
+
+.income_h2 {
+    text-transform: uppercase;
+}
+.expense_h2 {
+    text-transform: uppercase;
+}
+
+/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
+max-width är 900px sen går den över till 80% av sidan */
 
 .wrapper {
     width: 80%;
@@ -37,26 +50,88 @@ h2 {
     background-color: white;
 }
 
+.background-container {
+   height:75vh;
+   /* background-image: url("/images/background_big.jpg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover; */
+
+}
+
+/*för total presentationen*/
+
+.result_container {
+    background-image: url("images/header-big.jpg");
+    background-position:center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    padding:10%;
+    margin-bottom: 1px;
+    border:1px solid black;
+    
+}
+
+.total {
+    display:flex;
+    flex-direction: column;
+}
+
+#total_result {
+    text-align: center;
+    
+}
+
+#h1_total {
+font-size: 3rem;
+font-weight: 900;
+text-transform: uppercase;
+color:whitesmoke;
+text-shadow: 1px 1px 1px black,
+2px 3px 1px black;}
+
+#total_result {
+font-size: 3rem;
+color:whitesmoke;
+text-shadow: 1px 1px 1px black,
+2px 3px 1px black;}
+
+/* add value container and inputs */
+
 .add_value_container {
-    margin-top:25%;
-    padding-top: 5%;
+    padding:3%;
     display:flex;
     justify-content: space-around;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f7f7f7;
 
 }
 
 #add_select {
-   
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
     width:10%;
+    height:2rem;
 }
 
 #add_text {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding-left: 1%;
     width:40%;
+    height:2rem;
     
 }
 
 #add_amount {
+    border: 1px solid #e7e7e7;
+    background-color: #fff;
+    padding-left: 1%;
     width:30%;
+    height:2rem;
 }
 
 /* För att ta bort styling på "add_amount"-fältet */
@@ -73,6 +148,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+/* submit och delete knappen */
 
 .submit_delete_value {
     padding-top: 5%;
@@ -82,27 +158,92 @@ input[type=number] {
 }
 
 #submit {
-    width:10%;
-    padding:0.4rem;
-    margin-right:2%;
+    position: relative;
+    background-color: #303030;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    padding: 1rem;
+    width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+#submit:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+#submit:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  } 
+
 
 #delete {
-    width:10%;
-    padding:0.4rem;
-    margin-left:2%;
+    position: relative;
+    background-color: #303030;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    padding: 1rem;
+    width: 15%;
+    text-align: center;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#delete:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
 }
 
 
 
-.result_container {
-    display:flex;
-    justify-content: center;
-    padding:10px;
-    
-}
+
+
+
+
+#delete:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
+
+
+
+/* inkomster och utgifter divar */
+
 
 .income_expenses {
     display:flex;
     justify-content: space-around;
 }
+
+
