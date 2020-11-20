@@ -15,30 +15,28 @@ body {
 
 
 h2 {
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 2.3rem;
+    font-weight: 100;
     text-decoration: underline;
+    text-transform: uppercase;
+    padding-bottom: 5%;
+  
 }
 
 .expense-p {
     color:rgb(177, 3, 3);
-    font-size: 1.1rem;
-    
+    font-size: 1.2rem;
+    font-weight: 400;
 }
 
 .income-p {
     color:rgb(1, 105, 1);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     
 }
 
-.income_h2 {
-    text-transform: uppercase;
-}
-.expense_h2 {
-    text-transform: uppercase;
-}
+
 
 /* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
 max-width är 900px sen går den över till 80% av sidan */
@@ -84,7 +82,7 @@ max-width är 900px sen går den över till 80% av sidan */
 }
 
 #h1_total {
-font-size: 3rem;
+font-size: 4rem;
 font-weight: 900;
 text-transform: uppercase;
 color:whitesmoke;
