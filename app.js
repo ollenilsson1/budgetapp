@@ -20,7 +20,7 @@ function budget (){
 
         const incomeP = document.createElement("p");
         incomeP.setAttribute("class", "income-p")
-        incomeP.innerHTML = text + "    " + amount + "  " + "sek";
+        incomeP.innerHTML = text + "    " + amount + "  " + ":-";
         incomeList.appendChild(incomeP);
     }  
     else if (selector == "-") {
@@ -31,7 +31,7 @@ function budget (){
         countExpenseTotal.push(num2);
         const expenseP = document.createElement("p");
         expenseP.setAttribute("class" , "expense-p")
-        expenseP.innerHTML = text + "    " + amount + "  " + "sek";
+        expenseP.innerHTML = text + "    " + amount + "  " + ":-";
         expenseList.appendChild(expenseP);
     }
     //for loop för att visa budgetens total
@@ -39,6 +39,12 @@ function budget (){
     for (i = 0; i<countTotal.length; i++)
     total += countTotal[i];
     totalResult.innerText = total;
+    if (total < 0)
+        totalResult.style.color = "firebrick" ;
+    else {
+        totalResult.style.color = "whitesmoke" ;
+    }
+    
 
     //for loop för att visa totalen av alla inkomster
     let totalIncome = 0;

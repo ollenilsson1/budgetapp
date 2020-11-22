@@ -45,7 +45,7 @@ max-width är 900px sen går den över till 80% av sidan */
     width: 80%;
     max-width: 900px;
     margin: auto;
-    background-color: white;
+    background-color:#f7f7f7;
 }
 
 .background-container {
@@ -101,8 +101,7 @@ text-shadow: 1px 1px 1px black,
     padding:3%;
     display:flex;
     justify-content: space-around;
-    border-bottom: 1px solid #e7e7e7;
-    background-color: #f7f7f7;
+    background-color:#f7f7f7;
 
 }
 
@@ -149,99 +148,80 @@ input[type=number] {
 /* submit och delete knappen */
 
 .submit_delete_value {
-    padding-top: 5%;
-    padding-bottom: 3%;
+    padding-bottom: 2%;
     display:flex;
     justify-content: center;
+    background-color:#f7f7f7;
 }
 
-#submit {
-    position: relative;
-    background-color: #303030;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    padding: 1rem;
-    width: 15%;
-    text-align: center;
+
+ #submit {
+    color: #404040 !important;
     text-transform: uppercase;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-}
+    background: #f7f7f7;;
+    padding: 12px;
+    margin-right: 1%;
+    border: 2px solid #757575 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
 
-#submit:after {
-    content: "";
-    background: #f1f1f1;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-}
-
-#submit:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  } 
-
+#submit:hover {
+    color: #494949 !important;
+    border-radius: 12px;
+    border-color: #000000 !important;
+    transition: all 0.3s ease 0s;
+    }
 
 #delete {
-    position: relative;
-    background-color: #303030;
-    border-radius: 12px;
-    font-size: 1.2rem;
-    color: #FFFFFF;
-    padding: 1rem;
-    width: 15%;
-    text-align: center;
+    color: #404040 !important;
     text-transform: uppercase;
-    transition-duration: 0.4s;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
-}
+    background: #f7f7f7;
+    padding: 12px;
+    margin-left:1%;
+    border: 2px solid #757575 !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    }
 
-#delete:after {
-    content: "";
-    background: #f1f1f1;
-    display: block;
-    position: absolute;
-    padding-top: 300%;
-    padding-left: 350%;
-    margin-left: -20px !important;
-    margin-top: -120%;
-    opacity: 0;
-    transition: all 0.8s
-}
-
-
-
-
-
-
-
-#delete:active:after {
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-  }
-
+#delete:hover {
+    color: #494949 !important;
+    border-radius: 12px;
+    border-color: #000000 !important;
+    transition: all 0.3s ease 0s;
+    }
 
 
 /* inkomster och utgifter divar */
 
 
 .income_expenses {
+    position:relative;
     display:flex;
     justify-content: space-around;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
+    height: 45vh;
+}
+
+#income_total {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    position: absolute;
+    bottom: -10%;
+  
+}
+
+#expense_total {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.15rem;
+    position: absolute;
+    bottom: -10%;
+    
 }
 
 
